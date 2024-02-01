@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Insert title here</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<link rel="stylesheet" href="formstyle.css">
+    <link rel="css" href="//cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
+</head>
+
+<body>
+ 
+  
+ <h1>User-Form</h1>
+    
+   
+    <form name="form1" action="/secura/logout" method="POST">
+         <input type="submit" value="Logout" class="logoutButton">
+    </form>
+   
+    
+    <form name="form2" id="loginSubmit"  >
+        
+      <div class="formdesign" id="name">
+         Name : <input type="text" class="fname" name="fname">  <span class="nameformerror formerror"></span>
+      </div>
+      
+      <div class="formdesign" id="age">
+         Age : <input type="text" class="fage" name="fage" >  <span class="formerror ageformerror"></span>
+      </div>
+
+      <div class="formdesign gender" id="gender">
+              Gender:
+              <div>
+                <input type="radio" id="male" name="fgender" value="male"
+                       >
+                <label for="male">Male</label> <span class="formerror"></span>
+              </div>
+          
+              <div>
+                <input type="radio" id="female" name="fgender" value="female">
+                <label for="female">Female</label>
+              </div>
+
+            <div class="formerror genderformerror"></div>
+            
+      </div>
+
+
+      <div class="formdesign" id="email">
+          Email : <input type="text" class="femail" name="femail">  <div class="formerror emailformerror"></div>
+          <div class="formerror dotcomerror"></div>
+       </div>
+
+      <div class="formdesign" id="dob">
+          DOB : <input type="text" class="fdob" name="fdob" placeholder="dd/mm/yyyy" >  
+          <div class="formerror dateformerror"></div>
+          <div class="formerror monthformerror"></div>
+          <div class="formerror yearformerror"></div>
+       </div>
+
+       <div class="formdesign" id="phone">
+          Phone : <input type="phone" class="fphone" name="fphone">  <div class="formerror phoneformerror"></div>
+       </div>
+
+       <div class="formdesign" id="pass">
+          Password : <input type="password" class="fpass" name="fpass" >  
+          <div class="uppercase formerror"></div>
+          <div class="lowercase formerror"></div>
+          <div class="number formerror"></div>
+          <div class="symbol formerror"></div>
+       </div>
+       <div class="formdesign" id="pass">
+          Confirm-Password : <input type="password" class="fcpass" name="fcpass" >  
+          <div class="confirmformerror formerror"></div>
+       </div>
+
+       <input class="submitButton" type="submit" value="submit">
+  </form>
+
+      <br> <br> <br>
+
+         <table id="example" class="table display">
+          
+
+         </table>
+
+
+    
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js" integrity="sha512-rstIgDs0xPgmG6RX1Aba4KV5cWJbAMcvRCVmglpam9SoHZiUCyQVDdH2LPlxoHtrv17XWblE/V/PP+Tr04hbtA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
+
+</body>
+     
+     <script src="//cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+     <script src="formscript.js"></script>
+ 
+
+</html>

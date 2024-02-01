@@ -1,0 +1,60 @@
+
+        body{
+             padding: 10px 50px;  
+        }
+
+        h1{
+            margin: 18px;
+        }
+
+        .formdesign{
+            font-size: 25px;
+            /* padding: 20px; */
+            margin: 20px;
+        }
+
+        .formdesign input{
+            width: 50%;
+            height: 35px;
+            border-radius: 5px;
+            font-size: 22px;
+        }
+
+        #age input{
+            margin-left: 18px;
+        }
+
+        #gender input{
+            width: 10%;
+            
+        }
+
+        .formerror{
+            font-size: 15px;
+            color: red;
+        }
+        
+        input.logoutButton {
+            float: right;
+        }
+        
+
+        .ok
+        {
+            font-size: 18px;
+            color: green;
+        }
+
+        input.submitButton{
+            width: 10%;
+            margin: 10px 20px;
+            height: 35px;
+            font-size: 20px;
+            border-radius: 4px;
+        }
+
+        table,th,td
+        {
+            border: 1px solid black;
+            padding: 9px;
+        }
